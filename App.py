@@ -11,8 +11,7 @@ st.set_page_config(
     layout="wide"
 )
 
-# Auto refresh every second
-st_autorefresh(interval=1000, key="clock")
+
 
 # ----------------------------------
 # CUSTOM CSS

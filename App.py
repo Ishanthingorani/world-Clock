@@ -15,7 +15,7 @@ st.set_page_config(
     layout="wide"
 )
 st_autorefresh(
-    interval=100,
+    interval=200,
     key="world_clock_refresh"
 )
 
@@ -71,7 +71,7 @@ st.markdown("""
 
 try:
     st.image(
-        "world-clock/FINAL_LOGO_2-removebg-preview.png",
+        "world-clock/FINAL_LOGO_2-removebg-preview.png,
         width=220
     )
 except:

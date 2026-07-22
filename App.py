@@ -13,6 +13,13 @@ st.set_page_config(
     page_title="KYVEX GLOBAL - World Time Checker",
     page_icon="🌍",
     layout="wide"
+    try:
+ st.image(
+    "FINAL_LOGO_2-removebg-preview.png",
+    width=220
+)
+except:
+    pass
 )
 st_autorefresh(
     interval=200,
@@ -69,13 +76,7 @@ st.markdown("""
 # LOGO
 # ----------------------------------
 
-try:
- st.image(
-    "FINAL_LOGO_2-removebg-preview.png",
-    width=220
-)
-except:
-    pass
+
 
 
 st.markdown(

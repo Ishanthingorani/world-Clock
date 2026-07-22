@@ -128,23 +128,84 @@ with col1:
 
     st.markdown("<div class='card'>", unsafe_allow_html=True)
 
-    st.subheader(selected)
+    import streamlit as st
+import streamlit.components.v1 as components
 
-    st.markdown(
-        f"<div class='bigtime'>{now.strftime('%I:%M:%S %p')}</div>",
-        unsafe_allow_html=True
-    )
+clock_html = """
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    margin:0;
+    padding:0;
+    background:transparent;
+    font-family:Arial, sans-serif;
+}
 
-    st.write("### 📅 Date")
-    st.write(now.strftime("%A, %d %B %Y"))
+.clock{
+    text-align:center;
+    font-size:48px;
+    font-weight:bold;
+    color:#0B5394;
+}
 
-    st.write("### 🌐 Time Zone")
-    st.write(timezone)
+.date{
+    text-align:center;
+    font-size:20px;
+    color:#666;
+    margin-top:10px;
+}
+</style>
+</head>
 
-    st.write("### 📍 Status")
-    st.write(status)
+<body>
 
-    st.markdown("</div>", unsafe_allow_html=True)
+<div class="clock" id="clock"></div>
+<div class="date" id="date"></div>
+
+<script>
+
+function updateClock(){
+
+    const now = new Date();
+
+    const time = now.toLocaleTimeString(
+        'en-US',
+        {
+            hour:'2-digit',
+            minute:'2-digit',
+            second:'2-digit',
+            hour12:true
+        }
+    );
+
+    const date = now.toLocaleDateString(
+        'en-US',
+        {
+            weekday:'long',
+            year:'numeric',
+            month:'long',
+            day:'numeric'
+        }
+    );
+
+    document.getElementById("clock").innerHTML=time;
+    document.getElementById("date").innerHTML=date;
+
+}
+
+updateClock();
+
+setInterval(updateClock,1000);
+
+</script>
+
+</body>
+</html>
+"""
+
+components.html(clock_html, height=120)
 # ==========================================================
 # RIGHT SIDE PANEL
 # ==========================================================

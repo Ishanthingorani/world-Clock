@@ -13,6 +13,10 @@ st.set_page_config(
     page_title="KYVEX GLOBAL - World Time Checker",
     page_icon="🌍",
     layout="wide"
+    
+    col_logo = st.columns(3)
+
+with col_logo[1]:
     try:
  st.image(
     "FINAL_LOGO_2-removebg-preview.png",

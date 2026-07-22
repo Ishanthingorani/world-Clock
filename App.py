@@ -61,7 +61,7 @@ st.markdown("""
 # ----------------------------------
 
 try:
-    st.image("assets/r"D:\linkedin_scrap\Input_file\Kyvex_Global\KYVEX_World_Time_Checker\assets\FINAL_LOGO_2-removebg-preview.png"", width=220)
+    st.image("assets/st.image("assets/FINAL_LOGO_2-removebg-preview.png", width=220)", width=220)
 except:
     pass
 

@@ -70,10 +70,10 @@ st.markdown("""
 # ----------------------------------
 
 try:
-    st.image(
-        "world-clock/FINAL_LOGO_2-removebg-preview.png,
-        width=220
-    )
+ st.image(
+    "FINAL_LOGO_2-removebg-preview.png",
+    width=220
+)
 except:
     pass
 

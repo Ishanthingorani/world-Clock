@@ -14,16 +14,6 @@ st.set_page_config(
     page_icon="🌍",
     layout="wide"
     
-    col_logo = st.columns(3)
-
-with col_logo[1]:
-    try:
- st.image(
-    "FINAL_LOGO_2-removebg-preview.png",
-    width=220
-)
-except:
-    pass
 )
 st_autorefresh(
     interval=200,
@@ -79,7 +69,17 @@ st.markdown("""
 # ----------------------------------
 # LOGO
 # ----------------------------------
+col_logo = st.columns(3)
 
+with col_logo[1]:
+    
+    try:
+ st.image(
+    "FINAL_LOGO_2-removebg-preview.png",
+    width=220
+)
+except:
+    pass
 
 
 

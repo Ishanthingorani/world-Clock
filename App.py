@@ -15,7 +15,7 @@ st.set_page_config(
     layout="wide"
 )
 st_autorefresh(
-    interval=10,
+    interval=100,
     key="world_clock_refresh"
 )
 

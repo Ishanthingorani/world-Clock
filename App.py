@@ -2,6 +2,7 @@ import streamlit as st
 from datetime import datetime
 from zoneinfo import ZoneInfo
 import streamlit.components.v1 as components
+from streamlit_autorefresh import st_autorefresh
 
 
 # ----------------------------------
@@ -12,6 +13,10 @@ st.set_page_config(
     page_title="KYVEX GLOBAL - World Time Checker",
     page_icon="🌍",
     layout="wide"
+)
+st_autorefresh(
+    interval=10,
+    key="world_clock_refresh"
 )
 
 

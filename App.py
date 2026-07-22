@@ -69,14 +69,14 @@ st.markdown("""
 # ----------------------------------
 # LOGO
 # ----------------------------------
-col_logo = st.columns(3)
+col_logo = st.columns(5)
 
 with col_logo[1]:
     
     try:
  st.image(
     "FINAL_LOGO_2-removebg-preview.png",
-    width=220
+    width=400
 )
 except:
     pass

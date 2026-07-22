@@ -71,7 +71,7 @@ st.markdown("""
 # ----------------------------------
 col_logo = st.columns(5)
 
-with col_logo[1]:
+with col_logo[3]:
     
     try:
  st.image(

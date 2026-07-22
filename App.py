@@ -66,7 +66,7 @@ st.markdown("""
 
 try:
     st.image(
-        "assets/FINAL_LOGO_2-removebg-preview.png",
+        "orld-clock/FINAL_LOGO_2-removebg-preview.png",
         width=220
     )
 except:
